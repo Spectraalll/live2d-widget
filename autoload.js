@@ -1,4 +1,4 @@
-// live2d_path 参数建议使用绝对路径
+// live2d_path 参数建议使用绝对路径test
 const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
 //const live2d_path = "/live2d-widget/";
 
@@ -33,7 +33,8 @@ if (screen.width >= 768) {
 	]).then(() => {
 		// 配置选项的具体用法见 README.md
 		initWidget({
-			waifuPath: live2d_path + "waifu-tips.json",
+			// waifuPath: live2d_path + "waifu-tips.json",
+			waifuPath: "file:///Users/shengyiran/Documents/GitHub/live2d-widget/waifu-tips.json",
 			//apiPath: "https://live2d.fghrsh.net/api/",
 			cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
 			tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
