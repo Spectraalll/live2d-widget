@@ -1,6 +1,13 @@
 {
 	"mouseover": [
 		{
+			"selector": "#startSpeakTextAsyncButton",
+			"text": [
+				"test1",
+				"test！1"
+			]
+		},
+		{
 			"selector": "#live2d",
 			"text": [
 				"干嘛呢你，快把手拿开～～1",
