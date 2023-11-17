@@ -96,8 +96,12 @@ function loadWidget(config) {
         window.addEventListener("click", event => {
             for (let { selector, text } of result.click) {
                 if (!event.target.closest(selector)) continue;
-                text = randomSelection(text);
-                text = text.replace("{text}", event.target.innerText);
+                if (selector === "#startSpeakTextAsyncButton") {
+                    text = document.getElementById("phraseDiv").value;
+                } else {
+                    text = randomSelection(text);
+                    text = text.replace("{text}", event.target.innerText);
+                }
                 showMessage(text, 4000, 8);
                 return;
             }
