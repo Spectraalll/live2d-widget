@@ -3,6 +3,10 @@ const live2d_path = "https://cdn.jsdelivr.net/gh/Spectraalll/live2d-widget@maste
 // const live2d_path = "https://fastly.jsdelivr.net/gh/Spectraalll/live2d-widget@latest/";
 
 // 封装异步加载资源的方法
+function speak(){
+	o("testtest1",4e3,10);
+}
+// 封装异步加载资源的方法
 function loadExternalResource(url, type) {
 	return new Promise((resolve, reject) => {
 		let tag;
